@@ -9,4 +9,12 @@
   	<servlet-name>abc</servlet-name>
   	<url-pattern>/add</url-pattern>
   </servlet-mapping>
+  <servlet>
+  	<servlet-name>hij</servlet-name>
+  	<servlet-class>firstservlet.MulServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>hij</servlet-name>
+  	<url-pattern>/mul</url-pattern>
+  </servlet-mapping>
 </web-app>

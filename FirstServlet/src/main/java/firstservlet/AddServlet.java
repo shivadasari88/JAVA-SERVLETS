@@ -14,5 +14,11 @@ public class AddServlet extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         out.println("<h1>Sum is: " + sum + "</h1>");
+        
+        request.setAttribute("sum", sum);
+        
+		RequestDispatcher rd = request.getRequestDispatcher("/mul");
+        rd.forward(request,response);
+        		
     }
 }
