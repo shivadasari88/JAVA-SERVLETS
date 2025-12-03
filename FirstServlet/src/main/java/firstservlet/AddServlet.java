@@ -1,6 +1,8 @@
 package firstservlet;
 
 import java.io.*;
+
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 
@@ -19,6 +21,8 @@ public class AddServlet extends HttpServlet {
         
 		RequestDispatcher rd = request.getRequestDispatcher("/mul");
         rd.forward(request,response);
+        
+        
         		
     }
 }
