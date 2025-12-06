@@ -16,7 +16,10 @@ public class Login extends HttpServlet {
 		String uname = request.getParameter("uname");
 		String pass = request.getParameter("pass");
 		
-		if(uname.equals("shiva") && pass.equals("learning")){
+		
+		LoginDao dao = new LoginDao();
+		
+		if(dao.check(uname, pass)){
 			HttpSession session = request.getSession();
 			session.setAttribute("username", uname);
 			response.sendRedirect("welcome.jsp");
