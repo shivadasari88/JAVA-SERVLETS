@@ -9,5 +9,9 @@
 </head>
 <body>
     <h1>Hello World!</h1>
+    <form action="GetPerson">
+    	<input type="text" name="pid">
+    	<input type="submit">
+    </form>
 </body>
 </html>
