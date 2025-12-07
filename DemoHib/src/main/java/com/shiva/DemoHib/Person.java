@@ -27,4 +27,10 @@ public class Person {
 	public void setColor(String color) {
 		this.color = color;
 	}
+	@Override
+	public String toString() {
+		return "Person [pid=" + pid + ", pname=" + pname + ", color=" + color + "]";
+	}
+	
+	
 }
