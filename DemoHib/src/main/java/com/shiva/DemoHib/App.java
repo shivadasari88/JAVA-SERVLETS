@@ -11,9 +11,7 @@ public class App
     public static void main( String[] args )
     {
     	Person shiva = new Person();
-    	shiva.setPid(101);
-    	shiva.setPname("shiva");
-    	shiva.setColor("white");
+   
     	
     	Configuration con = new Configuration().configure().addAnnotatedClass(Person.class);
     	SessionFactory sf = con.buildSessionFactory();
